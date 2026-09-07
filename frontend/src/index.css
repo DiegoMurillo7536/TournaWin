@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* shadcn/ui design tokens. Theme-aware: light by default, dark via .dark class. */
+@theme {
+  --color-border: hsl(214 32% 91%);
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(222 47% 11%);
+  --color-primary: hsl(222 47% 11%);
+  --color-primary-foreground: hsl(210 40% 98%);
+  --color-muted: hsl(210 40% 96%);
+  --color-muted-foreground: hsl(215 16% 47%);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+}

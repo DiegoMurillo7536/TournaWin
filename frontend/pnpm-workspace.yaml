@@ -1,0 +1,8 @@
+# pnpm 10+ blocks dependency postinstall scripts by default (supply-chain hardening).
+# Each entry here is an explicit, reviewed exception:
+#   esbuild - postinstall resolves its platform-native binary; Vite and Vitest need it
+#   msw     - postinstall installs the browser service worker used for API mocking
+# Setting name is `allowBuilds` as of pnpm 11 (was `onlyBuiltDependencies` in pnpm 10).
+allowBuilds:
+  esbuild: true
+  msw: true
