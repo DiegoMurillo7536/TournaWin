@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+.vite/
+playwright-report/
+test-results/
+
+# Env / secrets
+.env
+.env.local
+
+# Floci local state
+.floci/
+backend/data/
+
+# OS / editors
+.DS_Store
