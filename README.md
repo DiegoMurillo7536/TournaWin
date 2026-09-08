@@ -3,15 +3,13 @@
 Tournament management app — FastAPI backend, React frontend, local AWS via
 [Floci](https://github.com/floci-io/floci).
 
-Design decisions live in [`specs/`](specs/). Start with
-[`specs/00-tech-stack.md`](specs/00-tech-stack.md).
+Design decisions are kept as working documents outside this repository.
 
 ## Layout
 
 ```
 backend/    FastAPI service (api -> services -> repositories -> models)
 frontend/   React 19 + Vite SPA
-specs/      Living design docs and ADRs
 compose.yaml  floci + postgres + backend + frontend
 ```
 
@@ -46,5 +44,5 @@ same code runs against both. All AWS clients are built in
 
 `backend/src/tournament/services/` must not import FastAPI, boto3, or SQLAlchemy. That is what
 lets one domain module serve both an HTTP route and a Lambda handler
-([ADR 001](specs/05-adr/001-background-work.md)). The rule is enforced by
+(ADR 001, kept with the design documents). The rule is enforced by
 `backend/tests/test_architecture.py`, not by convention.

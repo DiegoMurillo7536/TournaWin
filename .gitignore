@@ -25,3 +25,9 @@ backend/data/
 
 # OS / editors
 .DS_Store
+
+# Local-machine compose overrides
+compose.override.yaml
+
+# Design specs stay local: they are working documents, not part of the published repo.
+specs/
